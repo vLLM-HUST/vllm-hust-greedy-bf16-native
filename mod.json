@@ -11,5 +11,11 @@
   "patch_sha256": "daad5e6ca88f278f164736cfed2dde01c4bd1a3d58e34aa27bd3110b0ee39fa9",
   "lifecycle": "experimental",
   "activation": "readonly-worker-source-overlay-after-base-admission",
-  "expected_bf16_log_marker": "R10_EXPERIMENT_GREEDY_BF16_NATIVE full-vocabulary arm active dtype=torch.bfloat16"
+  "expected_bf16_log_marker": "R10_EXPERIMENT_GREEDY_BF16_NATIVE full-vocabulary arm active dtype=torch.bfloat16",
+  "maintainer": {
+    "name_zh": "张书豪",
+    "name_en": "Shuhao Zhang",
+    "github": "ShuhaoZhangTony",
+    "status": "interim"
+  }
 }

@@ -36,6 +36,10 @@ Use the R10 guard to admit the original runtime before mounting the generated fi
 python -m unittest discover -s tests -v
 ```
 
-底层采样器来自 [vLLM Ascend](https://github.com/vllm-project/vllm-ascend/blob/v0.30.0/vllm_ascend/sample/rejection_sampler.py#L171-L201)。本仓库维护 vLLM-HUST 的这一实验增量，个人维护人待组织确认。
+底层采样器来自 [vLLM Ascend](https://github.com/vllm-project/vllm-ascend/blob/v0.30.0/vllm_ascend/sample/rejection_sampler.py#L171-L201)。本仓库维护 vLLM-HUST 的这一实验增量。
+
+## 维护人 / Maintainer
+
+暂任维护人 **张书豪 / Shuhao Zhang** ([@ShuhaoZhangTony](https://github.com/ShuhaoZhangTony))。
 
 The [Apache 2.0 license](LICENSE) applies. See [NOTICE](NOTICE) for upstream attribution.
