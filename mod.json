@@ -1,0 +1,15 @@
+{
+  "id": "greedy-bf16-native",
+  "source_path": "runtime/ascend/vllm_ascend/sample/rejection_sampler.py",
+  "import_name": "vllm_ascend.sample.rejection_sampler",
+  "original_sha256": "d62875a1c942255586b9bdd85abb820153be4731fa99406ebb0ab25b0d5c816b",
+  "candidate_sha256": "6f8873c1d804af734934d9786b4d96b2326aa4ace6e644dbb50f2381f7b2cc48",
+  "predecessor_candidate_sha256": "b920bb3135d26ceb75b69f7c1ab1fbf8e11decb73042111a2aa3c875913945e6",
+  "base_engine": "full-answer-b1-20261121-r10",
+  "base_pypi_version": "2026.11.21.10",
+  "patch": "patches/greedy-bf16-native.patch",
+  "patch_sha256": "daad5e6ca88f278f164736cfed2dde01c4bd1a3d58e34aa27bd3110b0ee39fa9",
+  "lifecycle": "experimental",
+  "activation": "readonly-worker-source-overlay-after-base-admission",
+  "expected_bf16_log_marker": "R10_EXPERIMENT_GREEDY_BF16_NATIVE full-vocabulary arm active dtype=torch.bfloat16"
+}

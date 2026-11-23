@@ -1,0 +1,9 @@
+vLLM-HUST Native BF16 Greedy Sampling MOD
+
+This repository contains a patch for the Apache-2.0-licensed vLLM Ascend
+rejection sampler in the frozen vLLM-HUST R10 engine. The patch and its
+support tooling are distributed under the Apache License, Version 2.0.
+Original file notices remain in the resulting source.
+
+vLLM Ascend: https://github.com/vllm-project/vllm-ascend
+vLLM-HUST Engine: https://pypi.org/project/vllm-hust-engine/2026.11.21.10/
