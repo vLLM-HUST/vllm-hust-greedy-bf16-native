@@ -19,6 +19,16 @@ On the 190-case expansion the candidate generated 2.73% fewer tokens and complet
 
 [复核摘要 / Audited evidence](evidence/summary.json) · [vLLM-HUST 插件页 / MOD catalog](https://vllm-hust.sage.org.ai/plugins.html#greedy-bf16-native)
 
+## v2 同卡复核 / v2 same-device evaluation
+
+BF16 index-select v2 对照冻结 R10 后观察到收益不一致，暂缓集成 R11。MMLU-Pro 200 题输出吞吐
++1.88%，平均首字时延 +5.83%，答对 149→147。4K／16K 闭环并发 8 的吞吐分别变化 +0.54%／+0.01%。
+
+The BF16 index-select v2 experiment had mixed results against frozen R10 on the same devices.
+R11 integration is deferred. The report preserves fixed-five measurements, request data, and open evidence gaps.
+
+[v2 实测、逐请求指标与验收说明 / v2 evidence](https://github.com/vLLM-HUST/vllm-hust-benchmark/tree/main/reports/greedy-bf16-v2-20261124)
+
 ## 准备覆盖件 / Build the overlay
 
 从已经核验的 [R10 发行包](https://pypi.org/project/vllm-hust-engine/2026.11.21.10/) 部署中定位 `runtime/ascend/vllm_ascend/sample/rejection_sampler.py`。用 Python 3.10+ 和 Git 在独立目录生成候选文件。文件摘要见 [MOD 清单](mod.json)。
